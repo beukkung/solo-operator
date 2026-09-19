@@ -1,0 +1,24 @@
+name: Report an unhelpful decision
+description: Show a business scenario where the skill gave the wrong next step.
+title: "Behavior: "
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Prompt and relevant context
+      description: Use synthetic or anonymized information. Do not include customer data or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Actual response and expected decision
+      description: Explain which evidence or constraint the response missed.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Skill version, Codex version, and model
+    validations:
+      required: true

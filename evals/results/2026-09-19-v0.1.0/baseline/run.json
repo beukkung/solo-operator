@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-09-19T05:20:07.493941+00:00",
+  "arm": "baseline",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "codex_version": "codex-cli 0.154.0",
+  "cases_sha256": "8209d6855c5841c542967627c1ca5b39b1e60bb58ecc9508ad24bbdb0716b34a",
+  "rubric_sha256": "8711acfad92bee4250a192785a1cc10515b2979b21fc2b33fdd15a4810936c2f",
+  "skill_sha256": null,
+  "developer_instructions": "Answer the user's business question using only the supplied synthetic facts. No tools, web research, delegation, or file changes. Artifact contents, when present, are embedded in the user's message. Do not claim to have read files or conducted research outside that message. Respond in English.",
+  "isolation": {
+    "skip_host_skill_discovery": true,
+    "ignore_user_config": true,
+    "disabled_features": [
+      "apps",
+      "plugins",
+      "remote_plugin",
+      "skill_search",
+      "shell_tool",
+      "multi_agent",
+      "browser_use",
+      "browser_use_external",
+      "computer_use",
+      "image_generation",
+      "memories",
+      "hooks",
+      "workspace_dependencies"
+    ],
+    "ephemeral": true,
+    "cwd": "fresh empty temporary directory per sample",
+    "artifact_mode": "contents embedded in prompt, not filesystem retrieval"
+  }
+}

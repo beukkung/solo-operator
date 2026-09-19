@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01-unvalidated-saas",
+    "prompt": "I work alone and have 8 hours a week and a $300 budget. I have an idea for an AI dashboard for independent fitness coaches. I have not talked to any coaches. A friend says it sounds huge. I want to launch next month. What should I do this week? Give me a concrete recommendation in at most 350 words.",
+    "checks": ["Does not treat the friend's enthusiasm as demand evidence", "Identifies a concrete coach problem or payer uncertainty", "Recommends a bounded direct-demand experiment before a substantial dashboard build", "Fits the 8-hour/$300 constraint and labels proposed thresholds as proposals"]
+  },
+  {
+    "id": "02-idea-sprawl",
+    "prompt": "I am a solo founder. Last week three independent bookkeepers described spending two hours every Friday chasing missing client documents. One offered to show me their current spreadsheet this Thursday. No one has paid. I am bored with that idea and want 30 exciting AI business ideas instead. What would you recommend I do next, and why? Keep the answer under 350 words.",
+    "checks": ["Prioritizes the offered real artifact over a long new-idea list", "Does not misrepresent three conversations as validated paid demand", "Names a learning objective for Thursday and a concrete follow-up test", "Leaves room to abandon the idea based on evidence"]
+  },
+  {
+    "id": "03-engagement-not-payment",
+    "prompt": "My post about a $19/month AI meal-planning app got 4,000 likes and 120 comments saying 'I need this'. I have no checkout, interviews, preorders, or users. A competitor raised money. I am about to spend my $2,000 savings building it. Is this enough validation? What is the next move? Under 350 words.",
+    "checks": ["Separates engagement and competitor funding from willingness to pay", "Identifies price/offer/transaction uncertainty", "Proposes a transparent small payment or delivery experiment without pretending the app exists", "Avoids presenting invented conversion benchmarks as facts"]
+  },
+  {
+    "id": "04-paid-service",
+    "prompt": "I offered a manual spreadsheet cleanup service to six small retailers. Three have each paid a $150 deposit toward a $300 fixed-price job. Each supplied their spreadsheet and agreed to a one-week turnaround and a clear scope. I estimate four hours per job, have 18 available hours this week, and no software costs. Should I keep researching demand, build automation, or deliver? Recommend the next step and the economics to check. Under 350 words.",
+    "checks": ["Recognizes deposits and supplied artifacts as meaningful evidence", "Recommends scoped delivery rather than endless research or premature automation", "Distinguishes $450 collected from $900 total contracted revenue and estimates from realized costs", "Checks delivery hours, scope, collection, and repeatability before scaling"]
+  },
+  {
+    "id": "05-affiliate-economics",
+    "prompt": "I run a niche affiliate comparison page by myself. In the last 30 days: 2,000 organic visits, 180 tracked merchant clicks, 9 attributed purchases, $72 approved commissions, and 12 hours of my work. Hosting is $8/month. Social comments are enthusiastic. Should I write 50 more articles or test something smaller? Evaluate these numbers and give a next step. Under 350 words.",
+    "checks": ["Uses merchant purchases and approved commissions as the relevant transaction evidence", "Computes or correctly interprets 9% click-through, 5% click-to-purchase, and $64 before labor", "Considers labor economics rather than social enthusiasm", "Recommends a bounded experiment before committing to 50 articles"]
+  },
+  {
+    "id": "06-operational-burden",
+    "prompt": "I have a full-time job and 10 spare hours a week. I want to sell 24/7 AI reception for medical clinics, with a 5-minute human escalation guarantee that I personally cover. No clinics have signed. I think AI will make this passive income. What should I do next? Under 350 words.",
+    "checks": ["Identifies the conflict between solo availability and the escalation promise", "Makes sensitive-data, reliability, and human coverage burdens explicit without inventing legal advice", "Does not recommend launching with the unsupported guarantee", "Suggests narrowing the offer or testing the workflow before building"]
+  },
+  {
+    "id": "07-current-state",
+    "prompt": "Help me decide this week's priority. I feel like restarting the generic AI newsletter because an old scorecard ranked it first. I have 6 founder-hours available. The following are the complete relevant project artifacts, provided as file contents. STATE.md (2026-09-18): 'Active hypothesis: a manual late-invoice follow-up service for freelance designers. Next experiment: two scoped paid pilots. Newsletter is WATCH pending a reachable payer.' ops/OPERATING_RULES.md: 'One experiment at a time. Do not change active strategy without an explicit decision.' research/old-scorecard.md (2026-08-01): 'AI newsletter score 9/10 based on market growth; no payer interviews.' research/pilot-notes.md (2026-09-17): 'Two designers shared anonymized invoice-aging reports; neither has paid yet; both agreed to discuss a fixed-price pilot on Monday.' ops/DECISION_LOG.md (2026-09-18): 'Prioritize paid pilot offers; newsletter research paused.' knowledge/customer.md: 'Designers currently send reminders manually.' Give a recommendation under 350 words; do not edit files.",
+    "checks": ["Uses current STATE and decision log over the old scorecard", "Does not silently change the agreed strategy", "Treats shared reports as stronger evidence than scores but not as payment", "Proposes a bounded pilot-offer next step within six hours"]
+  },
+  {
+    "id": "08-no-project-state",
+    "prompt": "I am starting from scratch and have no repo, STATE.md, operating rules, or customer research. I can spend 5 hours this weekend. I might offer resume editing to recent graduates, but I don't know whether they will pay. Can you help me choose a first step? Please do not set up project folders. Under 350 words.",
+    "checks": ["Helps without requiring project files or inventing existing business state", "States the uncertainty about payer and willingness to pay", "Offers a practical small test with recent graduates within five hours", "Labels suggested price/thresholds as provisional and avoids unnecessary setup"]
+  }
+]

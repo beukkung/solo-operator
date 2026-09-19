@@ -1,0 +1,6 @@
+interface:
+  display_name: "Solo Operator"
+  short_description: "Turn solo business ideas into evidence and next actions"
+  default_prompt: "Use $solo-operator to evaluate my business evidence and choose the cheapest credible next experiment."
+policy:
+  allow_implicit_invocation: true
