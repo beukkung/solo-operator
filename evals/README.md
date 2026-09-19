@@ -43,6 +43,8 @@ Do not interpret the flag as proof that every global instruction was removed.
 Both arms retain Codex's built-in instructions and may share unrelated skill metadata.
 Run controls before installing the target skill, or verify that your baseline
 cannot discover it. Do not use an installed target as an allegedly clean control.
+The runner refuses a baseline when it finds `solo-operator` in either standard
+global skills directory. Check any custom discovery paths separately.
 
 The output includes prompts, final responses, completion/usage events, timings,
 requested model, configuration, and content hashes. Local stderr is saved only

@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -45,6 +46,14 @@ def main() -> int:
     codex = shutil.which("codex")
     if not codex:
         parser.error("codex is not installed or not on PATH")
+    # The CLI's skip-discovery flag does not prove the global catalog is absent.
+    # Refuse the common contamination case rather than label it a clean control.
+    codex_home = Path(os.environ.get("CODEX_HOME", str(Path.home() / ".codex")))
+    installed_targets = [codex_home / "skills/solo-operator/SKILL.md",
+                         Path.home() / ".agents/skills/solo-operator/SKILL.md"]
+    if args.arm == "baseline" and any(path.exists() for path in installed_targets):
+        parser.error("Baseline requires solo-operator to be absent from global discovery. "
+                     "Use a clean evaluation environment or preserve and uninstall your copy first.")
     cases_text = (ROOT / "evals/cases.json").read_text(encoding="utf-8")
     cases = json.loads(cases_text)
     if args.case:
