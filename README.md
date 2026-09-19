@@ -152,13 +152,31 @@ And when three customers have already paid deposits:
 These are excerpts from the stored evaluation responses, not invented testimonials.
 The first earns a demand test; the second earns delivery.
 
-Read the [behavioral report](evals/REPORT.md): eight synthetic scenarios, a
-no-skill baseline, a skill-enabled run, full answers, and per-case scoring rationale.
-The [rubric](evals/RUBRIC.md) was defined before the runs.
+For a quick read, start with the [simple scorecard](evals/SIMPLE_REPORT.md). It
+asks three plain questions—evidence, a bounded founder-fit test, and a decision
+that follows the evidence—then links every case to the full response. The
+[behavioral report](evals/REPORT.md) contains the complete eight-case run, raw
+answers, metadata, and per-case scoring rationale. The [rubric](evals/RUBRIC.md)
+was defined before the original runs.
+
+The simple scorecard summarizes the existing run; it does not make a new model
+claim. In that run, strong experiment design appeared in 3/8 baseline answers
+and 7/8 skill answers. Both arms handled evidence in 8/8 cases, and the skill
+had one decision-focus regression in the idea-sprawl case.
+
+| Quick check | No skill | With Solo Operator |
+| --- | ---: | ---: |
+| Evidence separated from uncertainty | 8/8 | 8/8 |
+| Bounded, founder-fit next test | 3/8 | 7/8 |
+| Decision follows evidence | 8/8 | 7/8 |
+| All three together | 3/8 | 6/8 |
+
+These are secondary summaries of one unblinded synthetic run. Open the
+[simple scorecard](evals/SIMPLE_REPORT.md) for definitions, case links, and limits.
 
 Package checks and model behavior are separate. The CI badge verifies packaging;
-the behavioral report evaluates decision quality. This is a small, unblinded AI
-review, not a claim of statistically proven improvement or profitable business outcomes.
+the scorecards evaluate decision quality. This is a small, unblinded AI review,
+not a claim of statistically proven improvement or profitable business outcomes.
 
 See [how to reproduce the evaluation](evals/README.md),
 [release notes](docs/releases/v0.1.0.md), and the [skill itself](skills/solo-operator/SKILL.md).

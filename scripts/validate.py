@@ -80,7 +80,8 @@ def validate_repo(root: Path) -> list[str]:
     errors = validate_skill(root / "skills/solo-operator")
     for name in ["README.md", "LICENSE", "CONTRIBUTING.md", "requirements-dev.txt",
                  ".github/workflows/validate.yml", "evals/cases.json", "evals/RUBRIC.md",
-                 "evals/REPORT.md", "docs/releases/v0.1.0.md"]:
+                 "evals/REPORT.md", "evals/SIMPLE_SCORECARD.json", "evals/SIMPLE_REPORT.md",
+                 "docs/releases/v0.1.0.md"]:
         if not (root / name).is_file():
             errors.append(f"missing repository file: {name}")
     packaged_license = root / "skills/solo-operator/LICENSE"

@@ -10,6 +10,18 @@ There are two separate kinds of checks:
 Read the [published report](REPORT.md) and the eight [synthetic cases](cases.json).
 The report links both arms' raw responses, including any failures.
 
+For a one-minute explanation of the result, read [SIMPLE_REPORT.md](SIMPLE_REPORT.md).
+It is a deterministic summary of the same published responses, not an additional
+model run. The three checks are intentionally plain: separate evidence from
+uncertainty, propose a bounded founder-fit test, and make the decision follow the
+evidence. The source ledger is [SIMPLE_SCORECARD.json](SIMPLE_SCORECARD.json).
+
+Regenerate that page after changing the ledger:
+
+```sh
+python scripts/simple_eval.py
+```
+
 ## Reproduce a run
 
 Prerequisites: Python 3.11+, a logged-in Codex CLI (tested with 0.154.0), and access

@@ -1,0 +1,75 @@
+{
+  "format_version": 1,
+  "source_run": "2026-09-19-v0.1.0",
+  "purpose": "A plain-language secondary summary of the published eight-case behavioral run.",
+  "scoring_note": "This ledger reuses the five dimension scores in REPORT.md. It is a deterministic summary, not a new model run or an independent review.",
+  "dimensions": {
+    "evidence": "Evidence and uncertainty are separated (Evidence = 2 and Uncertainty = 2).",
+    "experiment": "The next test is concrete and fits the founder (Experiment = 2 and Founder fit = 2).",
+    "decision": "The recommendation follows the evidence (Decision = 2)."
+  },
+  "cases": [
+    {
+      "id": "01-unvalidated-saas",
+      "title": "Unvalidated SaaS",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 1, "founder_fit": 2, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2}
+    },
+    {
+      "id": "02-idea-sprawl",
+      "title": "Idea sprawl",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 1, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 1}
+    },
+    {
+      "id": "03-engagement-not-payment",
+      "title": "Engagement versus payment",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 1, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2}
+    },
+    {
+      "id": "04-paid-service",
+      "title": "Paid service",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2}
+    },
+    {
+      "id": "05-affiliate-economics",
+      "title": "Affiliate economics",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 1, "founder_fit": 2, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 1, "founder_fit": 2, "decision": 2}
+    },
+    {
+      "id": "06-operational-burden",
+      "title": "Operational burden",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 1, "founder_fit": 2, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2}
+    },
+    {
+      "id": "07-current-state",
+      "title": "Current state versus old score",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2}
+    },
+    {
+      "id": "08-no-project-state",
+      "title": "No project state",
+      "baseline": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2},
+      "skill": {"evidence": 2, "uncertainty": 2, "experiment": 2, "founder_fit": 2, "decision": 2}
+    }
+  ],
+  "examples": [
+    {
+      "title": "Operational burden: the skill makes the stop signal easier to see",
+      "case_id": "06-operational-burden",
+      "baseline_quote": "Treat this as an actively managed service until evidence proves otherwise.",
+      "skill_quote": "KILL the personal 24/7 guarantee. TEST a bounded administrative service."
+    },
+    {
+      "title": "Idea sprawl: the skill still has a tradeoff",
+      "case_id": "02-idea-sprawl",
+      "baseline_quote": "Give this one walkthrough and one concrete offer.",
+      "skill_quote": "For the exciting-ideas request, here are 30 brief brainstorming seeds—not validated opportunities."
+    }
+  ]
+}
