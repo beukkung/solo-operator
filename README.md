@@ -9,6 +9,12 @@ or a noisy launch into one concrete decision and the cheapest credible next test
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Behavioral evaluation](https://img.shields.io/badge/Evaluation-raw_responses_available-5965E8)](evals/REPORT.md)
 
+<div align="center">
+  <img src="docs/assets/solo-operator-hero.png" alt="Hands arranging evidence cards from a signal to an experiment and a decision" width="100%" />
+  <br />
+  <sub><strong>Evidence before effort.</strong> A small signal, a bounded experiment, a decision you can defend.</sub>
+</div>
+
 > **Maximize evidence gained per founder-hour.**
 
 You have a weekend, a small budget, and an idea for an AI dashboard. The hard part
@@ -18,6 +24,14 @@ When customers have already paid for a viable scope, it helps you get on with de
 
 **No runtime dependencies. No required business folders. No API key needed for the
 skill itself.** Uses your existing Codex access.
+
+<table>
+  <tr>
+    <td width="33%"><strong>01 · Signal</strong><br />Find the behavior, payer, and real cost of the problem.</td>
+    <td width="33%"><strong>02 · Test</strong><br />Run the smallest credible experiment before building the system.</td>
+    <td width="33%"><strong>03 · Decide</strong><br />PURSUE, TEST, WATCH, DEPRIORITIZE, or KILL with evidence attached.</td>
+  </tr>
+</table>
 
 ## Install in Codex
 
